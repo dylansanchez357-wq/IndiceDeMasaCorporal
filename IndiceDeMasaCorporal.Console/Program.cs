@@ -1,4 +1,4 @@
-﻿using System;
+﻿using IndiceDeMasaCorporal;
 
 namespace IndiceDeMasaCorporal
 {
@@ -25,17 +25,17 @@ namespace IndiceDeMasaCorporal
         {
             Console.WriteLine("Calculo del Indice de Masa Corporal (IMC)");
 
-            Console.WriteLine("Ingrese su peso en kilogramos: ");
+            Console.WriteLine("Proporcione el peso en kilogramos de la persona: ");
             double peso = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Ingrese su estatura en metros: ");
+            Console.WriteLine("Proporcione la estatura en metros de la persona: ");
             double estatura = Convert.ToDouble(Console.ReadLine());
 
             double imc = CalcularIMC(peso, estatura);
             string estado = ObtenerEstadoNutricional(imc);
 
-            Console.WriteLine("Su IMC es: " + imc);
-            Console.WriteLine("Estado nutricional: " + estado);
+            Console.WriteLine("El indice de masa corporal de la persona es: " + imc);
+            Console.WriteLine("El estado nutricional de la persona es: " + estado);
 
             Console.WriteLine("Presiona una tecla para salir...");
             Console.ReadKey();
