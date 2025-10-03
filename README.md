@@ -1,0 +1,1 @@
+Este proyecto es una aplicación de consola en C# que calcula el Índice de Masa Corporal (IMC)
